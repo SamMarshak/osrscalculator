@@ -1,19 +1,12 @@
 package Classes;
-
+import enums.CombatType;
 public class Weapon {
-
-    private int stabacc;
-    private int slashacc;
-    private int crushacc;
-    private int strbonus;
-
-    public Weapon(int stab, int slash, int crush, int str)
-    {
-        stabacc = stab;
-        slashacc = slash;
-        crushacc = crush;
-        strbonus = str;
-    }
-
+    protected int attackspeed;
+    protected CombatType type;
     
+    public Weapon(int speed, CombatType cbtype)
+    {
+        attackspeed = speed;
+        type = cbtype;
+    }
 }

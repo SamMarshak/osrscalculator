@@ -19,7 +19,12 @@ public class combatsimulator {
         return attackroll >= defenseroll;
     }
 
-    private int calculateAttackRoll()
+    private int calculateAttackRoll() //todo
+    {
+        return 0;
+    }
+
+    private int calculateStrengthRoll() //todo
     {
         return 0;
     }
