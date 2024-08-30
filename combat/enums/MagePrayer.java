@@ -1,6 +1,6 @@
 package enums;
 
-public enum MagePrayers {
+public enum MagePrayer {
 
     MYSTICLORE,
     MYSTICMIGHT,

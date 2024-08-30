@@ -1,6 +1,6 @@
 package enums;
 
-public enum MeleePrayers {
+public enum MeleePrayer {
 
     BRAINPRAYER,
     CHIVALRY,
