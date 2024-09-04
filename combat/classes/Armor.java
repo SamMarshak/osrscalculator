@@ -1,4 +1,4 @@
-package equipment.Armor;
+package classes;
 
 import enums.EquipmentSlot;
 public abstract class Armor {

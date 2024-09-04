@@ -1,16 +1,23 @@
 import java.util.Random;
 import java.util.Date;
-import java.math.*;
+
+import classes.Enemy;
+import classes.Player;
+
+
+
 public class combatsimulator {
 
     private Date date = new Date();
     private long seed = date.getTime();
     protected Random randomgen = new Random(seed);
 
-
+    Player p = new Player();
+    Enemy foe = new Enemy();
 
     public static void main(String[] args) {
         
+        p.
     }
 
 
@@ -27,5 +34,10 @@ public class combatsimulator {
     private int calculateStrengthRoll() //todo
     {
         return 0;
+    }
+
+    private int calculateEnemyDefenseRoll()
+    {
+        return 0; 
     }
 }
