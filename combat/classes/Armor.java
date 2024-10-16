@@ -8,8 +8,8 @@ public abstract class Armor {
     protected int crush;
     protected int range;
     protected int mage;
-    protected double meleestr;
-    protected double rangestr;
+    protected int meleestr;
+    protected int rangestr;
     protected double magestr;
     protected int stabdef;
     protected int slashdef;
@@ -43,7 +43,7 @@ public abstract class Armor {
         a.mage = mage;
     }
 
-    protected void setStrBonus(Armor a, double meleestr, double rangestr, double magestr)
+    protected void setStrBonus(Armor a, int meleestr, int rangestr, double magestr)
     {
         a.meleestr = meleestr;
         a.rangestr = rangestr;

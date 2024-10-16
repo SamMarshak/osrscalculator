@@ -1,5 +1,11 @@
 package classes;
 
+import java.util.Map;
+import java.util.HashMap;
+
+import enums.AttackType;
+import enums.CombatType;
+
 public class Enemy {
     protected int hp;
     protected int defense;
@@ -10,6 +16,8 @@ public class Enemy {
     protected int medrdef;
     protected int heavyrdef;
     protected int magedef;
+
+    Map<AttackType, Integer> defensemap = new HashMap<>();
 
     public Enemy()
     {
@@ -39,6 +47,29 @@ public class Enemy {
         e.medrdef = med;
         e.heavyrdef = heavy;
         e.magedef = mage;
+    }
+
+
+    public int getDefenseRoll(CombatType c)
+    {
+        //geteffectivelevel
+
+        double effectivelevel = Math.floor(defense + 8);
+        //get defenseroll
+        int defenseroll = (int) effectivelevel * (defensemap.get(c) * 64);
+        
+        return defenseroll;
+    }
+
+    protected void initializemap()
+    {
+        defensemap.put(AttackType.STAB, stabdef);
+        defensemap.put(AttackType.SLASH, slashdef);
+        defensemap.put(AttackType.CRUSH, crushdef);
+        defensemap.put(AttackType.MAGE, magedef);
+        defensemap.put(AttackType.LIGHT, lightrdef);
+        defensemap.put(AttackType.MEDIUM, medrdef);
+        defensemap.put(AttackType.HEAVY, heavyrdef);
     }
 
 }
