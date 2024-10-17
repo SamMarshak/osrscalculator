@@ -1,0 +1,28 @@
+Loot Roll's end goal is to simulate the loot recieved from x monster.
+
+I will try to figure out a way to port over drop tables from the wiki into here, 
+shouldn't be impossible but I have never done it.
+
+Brainstorm:
+
+"Enemies" have "Tables", paired with a Probability.
+
+Some Enemies are "Unique", and have different Rolling Procedures/Orders. (Muspah, Hydra, DT2)
+
+Every "Table" has a Probability to be rolled
+Every "Table" has entires of type <"Loot", Probability>.
+
+
+
+Every "Loot" comes with a Quantity and can be Tradeable or Untradeable. (Also GE/HA value)
+
+
+
+
+Probability is of type Double <= 1.0 . Represented as fraction or decimal. eg: 10% chance = 0.1 or 1d/10d.
+The Sum of Probabilites should be 1. (RDT nothing is still a drop)
+
+
+
+
+
