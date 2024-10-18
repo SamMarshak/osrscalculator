@@ -23,6 +23,12 @@ Probability is of type Double <= 1.0 . Represented as fraction or decimal. eg: 1
 The Sum of Probabilites should be 1. (RDT nothing is still a drop)
 
 
+Im thinking of making a huge map structure, where you can link an item 'id' to a name/image pairing.
+
+https://stackoverflow.com/questions/3563847/what-is-the-use-of-hashcode-in-java
+
+might need this. 
+
 
 
 
